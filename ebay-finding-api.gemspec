@@ -5,13 +5,13 @@ require "ebay/finding/api/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "ebay-finding-api"
-  spec.version       = Ebay::Finding::Api::VERSION
-  spec.authors       = ["camelmasa"]
-  spec.email         = ["camelmasa@gmail.com"]
+  spec.version       = "0.1.1" 
+  spec.authors       = ["petapro"]
+  spec.email         = ["petra.prochazkov@gmail.com"]
 
   spec.summary       = %q{eBay finding API client}
   spec.description   = %q{eBay finding API client}
-  spec.homepage      = "https://github.com/camelmasa/ebay-finding-api"
+  spec.homepage      = "https://github.com/petapro/ebay-finding-api"
   spec.license       = "MIT"
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
