@@ -31,6 +31,13 @@ module Ebay::Finding::Api
       Response.new(operation_name, connection.get("/services/search/FindingService/v1", options))
     end
 
+    def find_items_by_keywords_with_filter(keyword, filter_options)
+      operation_name = "findItemsByKeywords"
+      options = @base_options.merge("OPERATION-NAME" => operation_name, "keywords" => keyword).merge(filter_options)
+
+      Response.new(operation_name, connection.get("/services/search/FindingService/v1", options))
+    end	
+
     private
 
     def connection
